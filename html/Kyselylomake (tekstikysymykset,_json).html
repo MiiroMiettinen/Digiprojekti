@@ -12,24 +12,44 @@
 
 </head>
 <body>
-
+<form>
+<div id="lomake">
+</div>
+<button id="submitBtn" onClick="laheta()">Lähetä</button>
+</form>     
 <script>
+var lomakekentta = []
 $.getJSON("https://ghostly-spirit-75316.herokuapp.com/surveys/1", function( data ) {          
 var nimi = data.name;
 var kysymykset = data.questions;
-
 var items = []; 
 items.push("<h1>" + nimi + "</h1>");
 $.each(kysymykset, function( key,d ) {
 items.push( "<h3> " + d.kysymys + "<br> <input type='text' id=" + d.id +"> " );
 
+            lomakekentta.push(d.id);
 })
+      
+
+
 
          $( "<div/>", {
 	html: items.join( "" )
-	}).appendTo( "body" );
-})
+	}).appendTo( "#lomake" );
+});
+         
+         function laheta() {
+                  var vastaus;
+                  var tunnus;
+                  for (i=0; i<lomakekentta.length; i++){ 
+                  vastaus = document.getElementById(lomakekentta[i]).value;
+                  alert("{'id':" +lomakekentta[i]+", 'vastaus':'" + vastaus + "'}");
+                  }
+         };
+
 </script>
+
+
 </body>
 </html>
 
