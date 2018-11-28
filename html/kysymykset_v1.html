@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kyselylomake</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        form {
+            display: inline-block;
+            font-family: verdana;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <label for="kysymys1">1. Millä kampuksella toimit?</label>
+            <br>
+            <input type="radio" name="kampus" value="1">&nbsp;Haaga
+            <br>
+            <input type="radio" name="kampus" value="2">&nbsp;Malmi
+            <br>
+            <input type="radio" name="kampus" value="3">&nbsp;Pasila
+            <br>
+            <input type="radio" name="kampus" value="4">&nbsp;Porvoo
+            <br>
+            <input type="radio" name="kampus" value="5">&nbsp;Vierumäki
+            <br>
+            <label for="kysymys1">2. Mikä on koulutusohjelmasi?</label>
+            <br>
+            <input type="radio" value="Finanssi" name="koulutusohjelma">&nbsp;Finanssi- ja talousasiantuntijan ko&nbsp;
+            <input type="radio" value="resto" name="koulutusohjelma">&nbsp;Hotelli- ja ravintola-alan liikkeenjohdon ko&nbsp;
+            <input type="radio" value="Assistentti" name="koulutusohjelma">&nbsp;Johdon assistenttityön ja kielten ko&nbsp;
+            <input type="radio" value="Journalisti" name="koulutusohjelma">&nbsp;Journalismin koulutus YAMK&nbsp;
+            <input type="radio" value="Journalismi" name="koulutusohjelma">&nbsp;Journalismin ko&nbsp;
+            <input type="radio" value="Liiketalous" name="koulutusohjelma">Liiketalouden ko&nbsp;
+            <input type="radio" value="Liiketoiminta" name="koulutusohjelma">Liiketoiminnan kehittämisen ko YAMK&nbsp;
+            <input type="radio" value="Liiketekno" name="koulutusohjelma">Liiketoiminnan teknologiat -koulutus YAMK&nbsp;
+            <input type="radio" value="Uudistaminen" name="koulutusohjelma">Liiketoiminnan uudistamisen ja johtamisen koulutus YAMK&nbsp;
+            <input type="radio" value="Liikunta" name="koulutusohjelma">Liikunnan ja vapaa-ajan ko&nbsp;
+            <input type="radio" value="Valmennus" name="koulutusohjelma">Liikuntajohtamisen ja valmennuksen koulutus YAMK&nbsp;
+            <input type="radio" value="Matkailu" name="koulutusohjelma">Matkailun ko&nbsp;
+            <input type="radio" value="Matkajohto" name="koulutusohjelma">Matkailun liikkeenjohdon ko&nbsp;
+            <input type="radio" value="Myynti" name="koulutusohjelma">Myynnin ja visuaalisen markkinoinnin ko&nbsp;
+            <input type="radio" value="Myyntityö" name="koulutusohjelma">Myyntityön ko&nbsp;
+            <input type="radio" value="Palvelu" name="koulutusohjelma">Palveluliiketoiminnan johtamisen ko YAMK&nbsp;
+            <input type="radio" value="Ruoka" name="koulutusohjelma">Ruokatuotannon johtamisen ko&nbsp;
+            <input type="radio" value="Tietojenkäsittely" name="koulutusohjelma">&nbsp;Tietojenkäsittely&nbsp;
+            <input type="radio" value="Tietojärjestelmä" name="koulutusohjelma">&nbsp;Tietojärjestelmäosaamisen ko YAMK&nbsp;
+            <br>
+            <br>
+            <label for="kysymys1">3. Millaisia työtehtäviä olet tehnyt opiskelemaasi alaan liittyen?</label>
+            <br>
+            <input type="text" id="kysymys1">
+            <br>
+            <br>
+            <label for="kysymys1">4. Oletko opiskelujen ohella?</label>
+            <br>
+            <input type="checkbox" id="tsekpoksi">perustamassa yritystä ja haluat testata liikeideaasi vaivattomasti sekä riskittömästi
+            <br>
+            <input type="checkbox" id="tsekpoksi">etsimässä osaamistasi tukevia työtehtäviä
+            <br>
+            <input type="checkbox" id="tsekpoksi">kiinnostunut kokeilemaan erilaisia projekteja
+            <br>
+            <br>
+            <label for="kysymys1">5. Millaisia projekteja olisit kiinnostunut tekemään osuuskunnassa?</label>
+            <br>
+            <input type="checkbox" id="tsekpoksi">Tapahtumatuotanto
+            <br>
+            <input type="checkbox" id="tsekpoksi">Verkkosivustot
+            <br>
+            <input type="checkbox" id="tsekpoksi">Markkinointistrategian luonti
+            <br>
+            <input type="checkbox" id="tsekpoksi">Budjetointi
+            <br>
+            <input type="checkbox" id="tsekpoksi">Käyttäjätutkimus
+            <br>
+            <input type="checkbox" id="tsekpoksi">Digicheckup
+            <br>
+            <input type="checkbox" id="tsekpoksi">Markkina-analyysi
+            <br>
+            <input type="checkbox" id="tsekpoksi">Asiakastyytyväisyystutkimus
+            <br>
+            <input type="checkbox" id="tsekpoksi">Sisäisen viestinnän kehitysprojekti
+            <br>
+            <input type="text" id="kysymys1">
+            <br>
+            <br>
+            <label for="kysymys1">6. Millaisia palveluita odotat osuuskunnan tarjoavan?</label>
+            <br>
+            <input type="checkbox" id="tsekpoksi">Kirjanpito
+            <br>
+            <input type="checkbox" id="tsekpoksi">Lainopillista neuvoa
+            <br>
+            <input type="checkbox" id="tsekpoksi">Laskutus
+            <br>
+            <input type="checkbox" id="tsekpoksi">Mentorointi
+            <br>
+            <input type="checkbox" id="tsekpoksi">Toimeksiantoja
+            <br>
+            <input type="checkbox" id="tsekpoksi">En osaa sanoa
+            <br>
+            <br>
+            <label for="kysymys1">7. Millaisia kokemuksia sinulla on kevytyrittäjäpalveluista?</label>
+            <br>
+            <br>
+            <label for="kysymys1">Eazy</label>
+            <br>
+            <input type="radio" name="eazy" value="1">1 Erittäin huono
+            <input type="radio" name="eazy" value="2">2 Huono
+            <input type="radio" name="eazy" value="3">3 En osaa sanoa
+            <input type="radio" name="eazy" value="4">4 Hyvä
+            <input type="radio" name="eazy" value="5">5 Erittäin hyvä
+            <input type="radio" name="eazy" value="6">En tunne palvelua
+            <br>
+            <br>
+            <label for="kysymys1">OP kevytyrittäjä</label>
+            <br>
+            <input type="radio" name="op" value="1">1 Erittäin huono
+            <input type="radio" name="op" value="2">2 Huono
+            <input type="radio" name="op" value="3">3 En osaa sanoa
+            <input type="radio" name="op" value="4">4 Hyvä
+            <input type="radio" name="op" value="5">5 Erittäin hyvä
+            <input type="radio" name="op" value="6">En tunne palvelua
+            <br>
+            <br>
+            <label for="kysymys1">Mediakunta</label>
+            <br>
+            <input type="radio" name="mediakunta" value="1">1 Erittäin huono
+            <input type="radio" name="mediakunta" value="2">2 Huono
+            <input type="radio" name="mediakunta" value="3">3 En osaa sanoa
+            <input type="radio" name="mediakunta" value="4">4 Hyvä
+            <input type="radio" name="mediakunta" value="5">5 Erittäin hyvä
+            <input type="radio" name="mediakunta" value="6">En tunne palvelua
+            <br>
+            <br>
+            <label for="kysymys1">Ukko.fi</label>
+            <br>
+            <input type="radio" name="ukko" value="1">1 Erittäin huono
+            <input type="radio" name="ukko" value="2">2 Huono
+            <input type="radio" name="ukko" value="3">3 En osaa sanoa
+            <input type="radio" name="ukko" value="4">4 Hyvä
+            <input type="radio" name="ukko" value="5">5 Erittäin hyvä
+            <input type="radio" name="ukko" value="6">En tunne palvelua
+            <br>
+            <br>
+            <label for="kysymys1">8. Kuinka paljon olet valmis käyttämään aikaasi opintojen ohessa työssä käyntiin?</label>
+            <br>
+            <input type="text" id="kysymys4">
+            <br>
+            <label for="kysymys1">9. Millaisia tuloja odotat työskentelystä osuuskunnassa?</label>
+            <br>
+            <input type="text" id="kysymys5">
+            <br>
+            <br>
+            <br>
+            <label for="kysymys1">10. Onko 100€ vuosimaksu mielestäsi?</label>
+            <br>
+            <input type="radio" name="maksu" value="1">1 Liian pieni
+            <input type="radio" name="maksu" value="2">2 Pieni
+            <input type="radio" name="maksu" value="3">3 Sopiva
+            <input type="radio" name="maksu" value="4">4 Suuri
+            <input type="radio" name="maksu" value="5">5 Liian suuri
+            <br>
+            <br>
+            <label for="kysymys1">11. Onko 10% veloitus laskutuksesta mielestäsi?</label>
+            <br>
+            <input type="radio" name="laskutus" value="1">1 Liian pieni
+            <input type="radio" name="laskutus" value="2">2 Pieni
+            <input type="radio" name="laskutus" value="3">3 Sopiva
+            <input type="radio" name="laskutus" value="4">4 Suuri
+            <input type="radio" name="laskutus" value="5">5 Liian suuri
+            <br>
+            <br>
+            <input type="submit" name="lähetä" value="Lähetä"> </form>
+    </div>
+</body>
+
+</html>
