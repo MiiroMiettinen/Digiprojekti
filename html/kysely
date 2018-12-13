@@ -1,0 +1,345 @@
+
+
+<!doctype html>
+<html lang="">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130130590-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130130590-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Haaga-Helian osuuskuntakysely</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <div id="kokoroska">
+        <form>
+            <!--- PROGRESSBAR TÄSTÄ -->
+            <div class="progress palkki">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+            </div>
+            <div class="progress palkki1">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="7.14" aria-valuemin="0" aria-valuemax="100" style="width:7.14%"></div>
+            </div>
+            <div class="progress palkki2">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="14.2" aria-valuemin="0" aria-valuemax="100" style="width:14.2%"></div>
+            </div>
+            <div class="progress palkki3">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="21.4" aria-valuemin="0" aria-valuemax="100" style="width:21.4%"></div>
+            </div>
+            <div class="progress palkki4">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="28.5" aria-valuemin="0" aria-valuemax="100" style="width:28.5%"></div>
+            </div>
+            <div class="progress palkki5">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="35.7" aria-valuemin="0" aria-valuemax="100" style="width:35.7%"></div>
+            </div>
+            <div class="progress palkki6">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="42.8" aria-valuemin="0" aria-valuemax="100" style="width:42.8%"></div>
+            </div>
+            <div class="progress palkki7">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div>
+            </div>
+            <div class="progress palkki8">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="57.1" aria-valuemin="0" aria-valuemax="100" style="width:57.1%"></div>
+            </div>
+            <div class="progress palkki9">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="64.2" aria-valuemin="0" aria-valuemax="100" style="width:64.2%"></div>
+            </div>
+            <div class="progress palkki10">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="71.4" aria-valuemin="0" aria-valuemax="100" style="width:71.4%"></div>
+            </div>
+            <div class="progress palkki11">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="78.5" aria-valuemin="0" aria-valuemax="100" style="width:78.5%"></div>
+            </div>
+            <div class="progress palkki12">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85.7" aria-valuemin="0" aria-valuemax="100" style="width:85.7%"></div>
+            </div>
+            <div class="progress palkki13">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="92.6" aria-valuemin="0" aria-valuemax="100" style="width:92.6%"></div>
+            </div>
+            <div class="progress palkki14">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+            </div>
+            <h1>Haaga-Helian osuuskuntakysely</h1>
+            <!-- LOMAKEKYSYMYKSET JA VAIHTOEHDOT TÄSTÄ -->
+            <div id="landingpage">
+                <h2>Tervetuloa vastaamaan kyselyyn</h2>
+                <p>Kyselyn tarkoituksena on kartoittaa opiskelijoiden kiinnostusta ja tarpeita Haaga-Heliaan perustettavaa oppilaitososuuskuntaa kohtaan.</p>
+            </div>
+            <div id="lomake"></div>
+            <!--    <button id='laheta' onClick="testi()">Lähasdfasdf</button> -->
+            <div class="exit">
+                <h2>Kysely on päättynyt</h2>
+                <p>Kiitos vastauksista. Voit nyt poistua sivulta.</p>
+            </div>
+        </form>
+        <div id="painikkeet">
+            <div class="navi">
+                <div class="vasen">
+                    <button class="prev3 painike" onClick="takaisin2()">Takaisin</button>
+                    <button class="prev4 painike" onClick="takaisin3()">Takaisin</button>
+                    <button class="prev5 painike" onClick="takaisin4()">Takaisin</button>
+                    <button class="prev6 painike" onClick="takaisin5()">Takaisin</button>
+                    <button class="prev7 painike" onClick="takaisin6()">Takaisin</button>
+                    <button class="prev8 painike" onClick="takaisin7()">Takaisin</button>
+                    <button class="prev9 painike" onClick="takaisin8()">Takaisin</button>
+                    <button class="prev10 painike" onClick="takaisin9()">Takaisin</button>
+                    <button class="prev11 painike" onClick="takaisin10()">Takaisin</button>
+                    <button class="prev12 painike" onClick="takaisin11()">Takaisin</button>
+                    <button class="prev13 painike" onClick="takaisin12()">Takaisin</button>
+                    <button class="prev14 painike" onClick="takaisin13()">Takaisin</button>
+                    <button class="prev15 painike" onClick="takaisin14()">Takaisin</button>
+                    <button class="prev16 painike" onClick="takaisin15()">Takaisin</button>
+                </div>
+                <button class="next1" onClick="seuraava1()">Aloita vastaaminen</button>
+                <div class="oikea">
+                    <button class="next2 painike" onClick="seuraava2()">Seuraava</button>
+                    <button class="next3 painike" onClick="seuraava3()">Seuraava</button>
+                    <button class="next4 painike" onClick="seuraava4()">Seuraava</button>
+                    <button class="next5 painike" onClick="seuraava5()">Seuraava</button>
+                    <button class="next6 painike" onClick="seuraava6()">Seuraava</button>
+                    <button class="next7 painike" onClick="seuraava7()">Seuraava</button>
+                    <button class="next8 painike" onClick="seuraava8()">Seuraava</button>
+                    <button class="next9 painike" onClick="seuraava9()">Seuraava</button>
+                    <button class="next10 painike" onClick="seuraava10()">Seuraava</button>
+                    <button class="next11 painike" onClick="seuraava11()">Seuraava</button>
+                    <button class="next12 painike" onClick="seuraava12()">Seuraava</button>
+                    <button class="next13 painike" onClick="seuraava13()">Seuraava</button>
+                    <button class="next14 painike" onClick="seuraava14()">Seuraava</button>
+                    <button class="next15 painike" onClick="seuraava15()">Seuraava</button>
+                    <button id="laheta" class="painike" onClick="testi()">Lähetä</button>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery library ennen omaa koodia!!-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- TÄSTÄ SIIRTYMÄPAINIKKEET -->
+        <script>
+            function seuraava1() {
+                $('.next1').css({
+                    'visibility': 'hidden'
+                });
+                $(".kysymys2, .next2, .palkki").show();
+                $("#landingpage").hide();
+            }
+
+            function seuraava2() {
+                $(".kysymys2, .next2, .palkki").hide();
+                $(".kysymys3, .next3,.prev3,.palkki1").show();
+            };
+
+            function takaisin2() {
+                $(".kysymys3, .next3, .prev3, .palkki1").hide();
+                $(".kysymys2, .next2, .palkki").show();
+            }
+
+            function seuraava3() {
+                $(".kysymys3, .next3, .prev3, .palkki1").hide();
+                $(".kysymys4, .next4,.prev4,.palkki2").show();
+            };
+
+            function takaisin3() {
+                $(".kysymys4, .next4, .prev4, .palkki2").hide();
+                $(".kysymys3, .next3, .prev3, .palkki1").show();
+            }
+
+            function seuraava4() {
+                $(".kysymys4, .next4, .prev4, .palkki2").hide();
+                $(".kysymys5, .next5,.prev5,.palkki3").show();
+            };
+
+            function takaisin4() {
+                $(".kysymys5, .next5, .prev5, .palkki3").hide();
+                $(".kysymys4, .next4, .prev4, .palkki2").show();
+            }
+
+            function seuraava5() {
+                $(".kysymys5, .next5, .prev5, .palkki3").hide();
+                $(".kysymys6, .next6,.prev6,.palkki4").show();
+            };
+
+            function takaisin5() {
+                $(".kysymys6, .next6, .prev6, .palkki4").hide();
+                $(".kysymys5, .next5, .prev5, .palkki3").show();
+            }
+
+            function seuraava6() {
+                $(".kysymys6, .next6, .prev6, .palkki4").hide();
+                $(".kysymys7, .next7,.prev7,.palkki5").show();
+            };
+
+            function takaisin6() {
+                $(".kysymys7, .next7, .prev7, .palkki5").hide();
+                $(".kysymys6, .next6, .prev6, .palkki4").show();
+            }
+
+            function seuraava7() {
+                $(".kysymys7, .next7, .prev7, .palkki5").hide();
+                $(".kysymys8, .next8,.prev8,.palkki6").show();
+            };
+
+            function takaisin7() {
+                $(".kysymys8, .next8, .prev8, .palkki6").hide();
+                $(".kysymys7, .next7, .prev7, .palkki5").show();
+            }
+
+            function seuraava8() {
+                $(".kysymys8, .next8, .prev8, .palkki6").hide();
+                $(".kysymys9, .next9,.prev9,.palkki7").show();
+            };
+
+            function takaisin8() {
+                $(".kysymys9, .next9, .prev9, .palkki7").hide();
+                $(".kysymys8, .next8, .prev8, .palkki6").show();
+            }
+
+            function seuraava9() {
+                $(".kysymys9, .next9, .prev9, .palkki7").hide();
+                $(".kysymys10, .next10,.prev10,.palkki8").show();
+            };
+
+            function takaisin9() {
+                $(".kysymys10, .next10, .prev10, .palkki8").hide();
+                $(".kysymys9, .next9, .prev9, .palkki7").show();
+            }
+
+            function seuraava10() {
+                $(".kysymys10, .next10, .prev10, .palkki8").hide();
+                $(".kysymys11, .next11,.prev11,.palkki9").show();
+            };
+
+            function takaisin10() {
+                $(".kysymys11, .next11, .prev11, .palkki9").hide();
+                $(".kysymys10, .next10, .prev10, .palkki8").show();
+            }
+
+            function seuraava11() {
+                $(".kysymys11, .next11, .prev11, .palkki9").hide();
+                $(".kysymys12, .next12,.prev12,.palkki10").show();
+            };
+
+            function takaisin11() {
+                $(".kysymys12, .next12, .prev12, .palkki10").hide();
+                $(".kysymys11, .next11, .prev11, .palkki9").show();
+            }
+
+            function seuraava12() {
+                $(".kysymys12, .next12, .prev12, .palkki10").hide();
+                $(".kysymys13, .next13,.prev13,.palkki11").show();
+            };
+
+            function takaisin12() {
+                $(".kysymys13, .next13, .prev13, .palkki11").hide();
+                $(".kysymys12, .next12, .prev12, .palkki10").show();
+            }
+
+            function seuraava13() {
+                $(".kysymys13, .next13, .prev13, .palkki11").hide();
+                $(".kysymys14, .next14,.prev14,.palkki12").show();
+            };
+
+            function takaisin13() {
+                $(".kysymys14, .next14, .prev14, .palkki12").hide();
+                $(".kysymys13, .next13, .prev13, .palkki11").show();
+            }
+
+            function seuraava14() {
+                $(".kysymys14, .next14, .prev14, .palkki12").hide();
+                $(".kysymys15, .prev15, .palkki13, #laheta").show();
+            }
+
+            function takaisin14() {
+                $(".kysymys15, .next15, .prev15, .palkki13, #laheta").hide();
+                $(".kysymys14, .next14, .prev14, .palkki12").show();
+            }
+        </script>
+        <!-- TÄSTÄ KYSYMYSTEN JA VAIHTOEHTOJEN HAKU -->
+        <script>
+            var lomakekentta = [];
+            $.getJSON("https://ghostly-spirit-75316.herokuapp.com/surveys/1", function (data) {
+                var items = []; // alustetaan taulukko nimellä item    
+                var i = 0;
+                var kysymykset = data.questions;
+                $.each(kysymykset, function (key, d) {
+                        // lisätään push:lla taulukkoon li-elementti, jossa on json-tieto
+                        items.push("<div class='kysymys" + d.questionid + "'>" + "<span class='kysymysfont'>" + d.kysymys + "</span>" + " <br><br> ");
+                        lomakekentta.push(d.questionid);
+                        if (d.kysymystyyppi == "text") {
+                            items.push("<input type=" + d.kysymystyyppi + " id=" + d.questionid + "><br>");
+                        }
+                        else
+                        if (d.kysymystyyppi == "radio" || d.kysymystyyppi == "checkbox") {
+                            for (i = 0; i < d.choices.length; i++) {
+                                items.push("<input type=" + d.kysymystyyppi + " id=" + d.questionid + " name=" + d.questionid + " value=" + d.choices[i].choiceid + ">&nbsp;" + "<span class='vastausfont'>" + d.choices[i].text + "</span>" + "<br>");
+                            }
+                        }
+                        items.push("</div> ");
+                    })
+                    /*    items.push("<input type='submit' id='laheta' onClick=testi()>") */
+                    //tulostetaan taulukon tiedot sivulle 
+                $("<div>", { // tehdään uusi ul-elementti
+                    html: items.join("") // yhdistetaan taulukon solut join:lla
+                }).appendTo("#lomake"); // lisätään ul-elementti taulukkotietoineen        //bodyyn
+            });
+            // TÄSTÄ LÄHETYSFUNKTIO //
+            function testi() {
+                $(".kysymys15, #laheta, .prev15, .palkki13, #painikkeet").hide();
+                $(".exit, .palkki14").show();
+                var lahetys = [];
+                var vastaus;
+                var tyyppi;
+                lahetys.push("[");
+                for (i = 0; i < lomakekentta.length; i++) {
+                    tyyppi = document.getElementById(lomakekentta[i]).type;
+                    if (tyyppi == "text") {
+                        vastaus = document.getElementById(lomakekentta[i]).value;
+                        if (i < (lomakekentta.length - 1)) {
+                            lahetys.push('{"question":{"questionid":' + lomakekentta[i] + '}, "vastaustyyppi": "' + tyyppi + '","vastaus":"' + vastaus + '"},');
+                        }
+                        else {
+                            lahetys.push('{"question":{"questionid":' + lomakekentta[i] + '}, "vastaustyyppi": "' + tyyppi + '","vastaus":"' + vastaus + '"}');
+                        }
+                    }
+                    else
+                    if (tyyppi == "radio" || tyyppi == "checkbox") {
+                        var radios = document.getElementsByName(lomakekentta[i]);
+                        for (var y = 0; y < radios.length; y++) {
+                            if (radios[y].checked) {
+                                vastaus = radios[y].value;
+                                lahetys.push('{"question":{"questionid":' + lomakekentta[i] + '}, "vastaustyyppi": "' + tyyppi + '","choice":{"choiceid":' + vastaus + '}}');
+                            }
+                        }
+                        if (i < lomakekentta.length - 1) {
+                            lahetys.push(",")
+                        }
+                    }
+                }
+                lahetys.push("]");
+                var lopullinenLahetys = lahetys.join("")
+                    // ---- TÄSTÄ VASTAUSTEN POSTAAMINEN PALVELIMELLE -- //
+                $.ajax({
+                        url: 'https://ghostly-spirit-75316.herokuapp.com/answerall'
+                        , type: 'POST'
+                        , dataType: 'json'
+                        , data: lopullinenLahetys
+                        , contentType: "application/json"
+                    })
+                    /* alert(lopullinenLahetys)*/
+            };
+        </script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </div>
+</body>
+
+</html>
