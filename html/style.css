@@ -1,0 +1,392 @@
+/*custom font*/
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather);
+
+/*basic reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    /*Image only BG fallback*/
+    /*background = gradient + image pattern combo*/
+    /*background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));*/ 
+    /*background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);*/
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+
+body {
+    font-family: montserrat, arial, verdana;
+}
+
+h1 {
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: Fira Sans, sans-serif;
+    font-weight: 400;
+}
+
+
+/*form styles*/
+
+#kokoroska {
+    background-color: white;
+    /*    width: 40%;*/
+    width: 580px;
+    /*    text-align: center;*/
+    margin: auto;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+}
+
+#painikkeet {
+    padding: 20px;
+}
+
+form {
+    /*    text-align: center;*/
+    margin: auto 0;
+    width: 100%;
+    min-height: 640px;
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+.exit {
+    display: none;
+    text-align: center;
+}
+
+#landingpage {
+    margin: auto;
+    padding-top: 150px;
+    text-align: center;
+    text-justify: auto;
+}
+
+.painike {
+    display: none
+}
+
+
+/*Hide all except first fieldset*/
+
+.kysymys2 {
+    display: none;
+}
+
+.kysymys3 {
+    display: none;
+}
+
+.kysymys4 {
+    display: none;
+}
+
+.kysymys5 {
+    display: none;
+}
+
+.kysymys6 {
+    display: none;
+}
+
+.kysymys7 {
+    display: none;
+}
+
+.kysymys8 {
+    display: none;
+}
+
+.kysymys9 {
+    display: none;
+}
+
+.kysymys10 {
+    display: none;
+}
+
+.kysymys11 {
+    display: none;
+}
+
+.kysymys12 {
+    display: none;
+}
+
+.kysymys13 {
+    display: none;
+}
+
+.kysymys14 {
+    display: none;
+}
+
+.kysymys15 {
+    display: none;
+}
+
+
+/*inputs*/
+
+#lomake {
+    margin: auto 1;
+}
+
+input[type=text] {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Merriweather, serif;
+    color: #2C3E50;
+    font-size: 13px;
+    transition: 0.3s all linear;
+
+}
+
+input[type=text]:focus {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Merriweather, serif;
+    color: #2C3E50;
+    font-size: 13px;
+    box-shadow: 0px 0px 2px 3px #32B67A;
+    outline: none;
+}
+
+
+input[type=radio]:checked {
+  border: 4px solid white;
+  box-shadow:0px 0px 2px 3px #32B67A;
+  background-color: #32B67A;
+}
+
+input[type=radio]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid black;
+  transition: 0.3s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input[type=radio]:focus { outline: none; }
+/*
+form.input,
+form.textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+*/
+
+
+/*headings*/
+
+
+/*progressbar*/
+
+.progress {
+    display: none;
+}
+
+.progress-bar-striped {
+    background-color: #32B67A;
+}
+
+#progressbar {
+    margin: auto;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 9px;
+    width: 10%;
+    float: left;
+    position: relative;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+
+
+/*progressbar connectors*/
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+    /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+
+/*marking active/completed steps green*/
+
+
+/*The number of the step and the connector before it = green*/
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #27AE60;
+    color: white;
+}
+
+.next1 {
+    border: 1px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto;
+    cursor: pointer;
+    background-color: #32B67A;
+}
+
+.painike {
+    display: none;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto;
+    cursor: pointer;
+    background-color: #32B67A;
+}
+
+#painikkeet {
+    width: 100%;
+    background-color: #32B67A;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    float: right;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.kysymysfont {
+    font-family: Fira Sans, sans-serif;
+    font-size: 18px;
+}
+
+.vastausfont {
+    font-family: Merriweather, serif;
+    text-align: left;
+}
+
+.navi {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #kokoroska {
+        width: 90%;
+    }
+    #painikkeet {
+        padding: 10px;
+    }
+    .painike {
+        font-size: 14px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .kysymysfont {
+        font-size: 14px;
+    }
+    #landingpage {
+        margin: auto;
+        padding-top: 0px;
+    }
+    form {
+        min-height: 500px;
+    }
+}
+
+.oikea {
+    flex: 50%;
+    float: right;
+    text-align: right;
+}
+
+.vasen {
+    flex: 50%;
+    float: left;
+    text-align: left;
+}
